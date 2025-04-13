@@ -131,8 +131,11 @@ nav button a {
 }
 
 .social-icons a {
-  height: 25px;
-  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
   background-color: #001F23;
   color: #29FFE2;
   font-size: 24px;
@@ -368,6 +371,23 @@ nav button a {
 .project-row .project-content {
   flex: 1;
 }
+
+.project-row button {
+  background: #a020f0;
+  border: none;
+  padding: 14px 22px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  font-size: 15px;
+}
+
+.project-row button:hover {
+  background: #7c15c5;
+}
+
+
 
 .macbook-frame {
   width: 100%;
@@ -693,7 +713,7 @@ color: #cccccc;
   }
 
   .connect-btn {
-      margin-top: 20px;
+      margin-top: 25px;
       font-size: 16px;
   }
 
