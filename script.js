@@ -95,4 +95,32 @@ gsap.registerPlugin(ScrollTrigger);
       });
   });
 
+  const myTags = [
+    'HTML', 'CSS', 'JavaScript',
+    'Tailwind CSS', 'Bootstrap', 'GIT',
+    'VScode', 'UI-UX design', 'Github' , 'NodeJs'
+  ];
+
+  const tagCloud = TagCloud('#tagcloud', myTags, {
+    radius: 160,
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+    direction: 180,
+    keep: true
+  });
+
+  // Customize tag color
+  document.querySelector('#tagcloud').style.color = '#8b5cf6';
+
+  gsap.from(".achievement-card", {
+    scrollTrigger: ".achievement-card",
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
+
+  
+
 });
